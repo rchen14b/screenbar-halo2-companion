@@ -65,6 +65,14 @@ scripts/build-app.sh             # builds build/ScreenBar.app (signed ad hoc)
 scripts/build-app.sh --install   # also copies it to ~/Applications and launches it
 ```
 
+No prebuilt app is published: build it yourself. The ad hoc signature is enough to run it on the Mac
+that built it. To sign with your own certificate and bundle ID instead:
+
+```sh
+SIGN_IDENTITY="Developer ID Application: Your Name (TEAMID)" BUNDLE_ID=com.example.ScreenBar \
+  scripts/build-app.sh --install
+```
+
 Then open the panel, choose **… → Settings…**, and enter:
 
 - **Bridge address:** `screenbar-halo2.local` by default, or its IP address.

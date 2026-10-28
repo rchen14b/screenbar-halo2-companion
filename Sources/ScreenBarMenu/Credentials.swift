@@ -3,7 +3,8 @@ import Security
 
 /// The bridge's hostname in UserDefaults; its API encryption key in the login Keychain.
 enum Credentials {
-    static let service = "io.github.rchen14b.ScreenBarHalo2"
+    /// The Keychain item is named after the app's bundle ID, so a build with your own ID keeps its own.
+    static let service = Bundle.main.bundleIdentifier ?? "io.github.rchen14b.ScreenBarHalo2"
     private static let hostKey = "bridgeHost"
 
     static var host: String {
