@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>ScreenBar</string>
+	<key>CFBundleDisplayName</key>
+	<string>ScreenBar</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.github.rchen14b.ScreenBarHalo2</string>
+	<key>CFBundleExecutable</key>
+	<string>ScreenBarMenu</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>26.0</string>
+	<!-- Menu bar only: no Dock icon or app menu. -->
+	<key>LSUIElement</key>
+	<true/>
+	<!-- The bridge is on the local network. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>ScreenBar connects to the ScreenBar bridge (screenbar-halo2) on your local network.</string>
+</dict>
+</plist>

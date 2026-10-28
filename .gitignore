@@ -1,0 +1,25 @@
+# Hidden dotfiles/folders: .build/, .swiftpm/, .env, .DS_Store, editor state, ...
+.*
+!.gitignore
+
+# Build output
+build/
+DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+
+# Credentials: the bridge's API encryption key and anything like it never belong here.
+secrets.yaml
+secrets.*.yaml
+*secrets*.yaml
+*.key
+*.pem
+*.p12
+*.cer
+*.mobileprovision
+*.keychain
+*.keychain-db
+
+# Editor files
+*.swp
+*~
