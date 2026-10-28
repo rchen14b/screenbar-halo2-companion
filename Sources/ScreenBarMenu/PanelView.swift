@@ -39,6 +39,7 @@ struct PanelView: View {
                     NSApp.activate()
                     openSettings()
                 }
+                Button("Source on GitHub") { NSWorkspace.shared.open(AppInfo.sourceURL) }
                 Divider()
                 Button("Quit ScreenBar") { NSApp.terminate(nil) }
             } label: {

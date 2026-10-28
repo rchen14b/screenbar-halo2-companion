@@ -41,6 +41,10 @@ struct SettingsView: View {
                 LabeledContent("Status", value: statusText)
                 LabeledContent("Radio", value: store.radioStatus.isEmpty ? "—" : store.radioStatus)
             }
+            Section("About") {
+                LabeledContent("Version", value: AppInfo.version)
+                Link("ScreenBar Halo 2 Companion on GitHub", destination: AppInfo.sourceURL)
+            }
         }
         .formStyle(.grouped)
         .frame(width: 460)
